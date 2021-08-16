@@ -1,0 +1,45 @@
+.card {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  width: 20rem;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-family: Arial;
+}
+
+p {
+  font-family: Arial;
+}
+
+.delete-btn {
+  font: inherit;
+  display: block;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #800040;
+  color: white;
+  font-family: Arial ;
+  font-size: 18px;
+  border: 1px solid #800040;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.delete-btn:hover {
+  background-color: #9c1458;
+  border-color: #9c1458;
+}
+
+.delete-btn--alt {
+  background-color: transparent;
+  color: #800040;
+}
+
+.delete-btn--alt:hover {
+  background-color: #f8dae9;
+}
