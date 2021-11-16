@@ -1,7 +1,7 @@
-function Navbar() {
+function Navbar(params) {
 	return (
 		<div className={"navbar"}>
-			<div className={"createTodo"}><h1>Create Todo</h1></div>
+			<div className={"createTodo-btn"} onClick={params.onClick}><h1>Create Todo</h1></div>
 		</div>
 	);
 }

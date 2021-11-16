@@ -20,6 +20,42 @@ p {
 	font-family : Arial;
 }
 
+div {
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+}
+
+.submit-new-todo-btn {
+	font             : inherit;
+	display          : block;
+	padding          : 0.5rem 1.5rem;
+	cursor           : pointer;
+	border-radius    : 4px;
+	background-color : #800040;
+	color            : white;
+	font-family      : Arial;
+	font-size        : 18px;
+	border           : 1px solid #800040;
+	margin-left      : auto;
+	margin-right     : 0;
+}
+
+.submit-new-todo-btn:hover {
+	background-color : #9c1458;
+	border-color     : #9c1458;
+}
+
+.submit-new-todo-btn--alt {
+	background-color : transparent;
+	color            : #800040;
+}
+
+.submit-new-todo-btn--alt:hover {
+	background-color : #f8dae9;
+}
+
 .delete-btn {
 	font             : inherit;
 	display          : block;
@@ -53,19 +89,56 @@ p {
 	width            : 100%;
 	background-color : #800040;
 	height           : 4em;
-	margin-bottom    : 1em;
 }
 
 .todosContainer {
-	margin-left : 1em;
+	margin: 1em;
 }
 
-.createTodo {
+.createTodo-btn {
 	height : 100%;
-	color  : white;
+	width: 15em;
+	background-color: black;
+	cursor: pointer;
+}
+
+.createTodo-btn:hover {
+	background-color: #222;
+}
+
+.createTodo-btn > h1 {
+	text-align: center;
+	color : white;
+	width: 100%;
+	margin: 0;
+	font-weight: bold;
+}
+
+.createTodo-btn > h1.pointer {
+	cursor: pointer;
+}
+
+.createTodoContainer {
+	position: absolute;
+	width: 100%;
 	height: 100%;
 }
 
-.createTodo > h1 {
-	color : white;
+.center {
+}
+
+.createTodo {
+	margin: 0;
+	top: 50%;
+}
+
+.grayBackground {
+	position: absolute;
+	background-color: rgb(40,40,40);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	margin: 0;
+	opacity: 40%;
+	z-index: 10;
 }

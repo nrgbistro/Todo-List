@@ -1,4 +1,3 @@
-import Todo from "./Todo.js";
 import React, {useState} from "react";
 
 function TodosContainer() {
@@ -30,6 +29,16 @@ function TodosContainer() {
 				{todoList.map((todo, index) => <Todo title={todo.title} description={todo.description}
 													 onDelete={() => removeFromList(index)} key={index}/>)}
 			</div>
+		</div>
+	);
+}
+
+function Todo(params) {
+	return (
+		<div className="card">
+			<h1>{params.title}</h1>
+			<p>{params.description}</p>
+			<button className="delete-btn" onClick={params.onDelete}>Delete</button>
 		</div>
 	);
 }
